@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p{
+    color: #333333;
+    line-height: 1.5;
+}
+
+#home{
+    text-transform: uppercase;
+}
+
+
+
+h1, #home h2{
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#home h2{
+    font-size: 1.25rem;
+    letter-spacing: 0.6em;
+}
+
+.centered{
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+} 
+
+.navbar{
+    background-color: #EB7100;
+}
+
+.navbar-light .navbar-toggler-icon{ 
+    background-image: none;
+}
+.fas.fa-bars{
+    font-size: 1.5rem;
+    color: white;
+}
+
+hr{
+    border-top: 1px solid #FF7A00;
+}
+
+.small,
+.display-5{
+    color: #EB7100;
+}
+
+a.nav-link{
+    color: #ffffff ;
+    font-weight: 600;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #c4c4c4;
+    color: #EB7100;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+
+a.nav-link:hover{
+    color: #7c4007;
+}
+.carousel-indicators .active {
+    background-color: #EB7100;
+}
+
+.col-sm.mt-3 img{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-indicators{
+    bottom: -2.15rem;
+}
+ 
+.white-out:after {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(24, 21, 21, 0.6);
+    }
+
+.filter{
+  filter: grayscale(100%);
+}
+
+.testimonial-center{
+top: 30%;
+transform: translateY(-50%);
+}
+
+blockquote {
+    margin: -0.5rem 10px;
+    padding:  10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: #fff;
+}
+ blockquote:before {
+  content: open-quote;
+    font-size: 2em;
+    line-height: 0.5rem;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  
+blockquote:after {
+	content: '”';
+	right: -5rem;
+    bottom: -2rem;
+    font-size: 2em;
+}
+
+blockquote p {
+    display: inline;
+    color: #fff;
+    font-size: 14px;
+  }
+
+.form-control{
+background: #FEF7F1;
+border: 1px solid #FF7A00;;
+border-radius: 2px;
+
+}
+
+.testimonial-carousel{
+    width: 100%;
+}
+
+
+button.form-control{
+    background: #EB7100;
+    color: #ffffff;
+}
+
+div.no-height p{
+    line-height: 1.5rem;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e70' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e70' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+@media (min-width: 768px){
+
+    h1{
+        font-size: 7rem;
+        margin-top: 12rem;
+    }
+
+    #home h2{
+        font-size: 2rem;
+    }
+   
+    #testimonialcarouselExampleIndicators{
+        height: fit-content; 
+    }
+
+    .white-out img{
+        width: 100%;
+        height: auto; 
+    }
+
+    .testimonial-center{
+        top: 40%;
+    }
+
+    blockquote p{
+        font-size: 24px;
+    }
+
+    #servicesCarouselExampleIndicators > .carousel-inner img{
+        align-self: center;
+    }
+
+    .icon-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+
+    .icon-text{
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:1125px){
+
+    h1{
+        position: absolute;
+        left: 2rem;
+        font-size: 10rem;
+        top:21rem;
+        width: max-content;
+    }
+
+    #job-title{
+        position: absolute;
+        left: 7rem;
+        font-size: 4rem !important;
+        top:17rem;
+        transform: rotate(-90.44deg);
+    }
+
+
+    #servicesCarouselExampleIndicators > .carousel-inner{
+        align-self: center;
+    }
+
+    .testimonial-carousel{
+        width: 100%;
+        height: 580px;
+    }
+}
+
+@media (min-width: 1440px){
+    
+    h1{
+        position: absolute;
+        left: 2rem;
+        font-size: 10rem;
+        top:24.5rem;
+        width: max-content;
+    }
+
+    #job-title{
+        position: absolute;
+        left: 7rem;
+        font-size: 4rem !important;
+        top:20rem;
+        transform: rotate(-90.44deg);
+    }
+}
